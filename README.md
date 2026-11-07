@@ -12,8 +12,20 @@ it a simple game but i have encountered a lot of bugs , i have also drawn the as
 gaol :
 make mathématiques fun! a lot of people hate math but i don't, so i tried to turn it into a mini game
 
+assets:
+  drawings:
+bg.png : paper background
+tsks.png : tasks icon
+shop.png: shop icon
+cursor.png : cursor 
+everything got drawn in ibis paint
+
+sounds:
+click.mp3 : button click from pixabay from the author MatthewVakaliuk73627  !!
+
+
 try it out [https://snetchy09.github.io/Papery-Calculatory/]
 
-in action 
+this is it in action
 
 <img width="720" height="1029" alt="IMG_20261107_174604" src="https://github.com/user-attachments/assets/a8b95717-9995-41c6-a29e-89874afacdc6" />
