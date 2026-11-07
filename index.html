@@ -147,6 +147,14 @@
     { id: 'log', name: 'log', icon: 'log', desc: 'natural log', gate: 'earned', n: 1400 }
   ];
 
+  var clickSound = new Audio('click.mp3');
+  clickSound.volume = 0.35;
+
+  function playClick() {
+    clickSound.currentTime = 0; // let quick repeated clicks play too
+    clickSound.play().catch(function () {}); // ignore blocked/failed playback
+  }
+  
   function blank() {
     return {
       seen: false, ink: {}, pts: 0, cells: 0, unlocked: [], doubled: {}, cond: 100,
@@ -887,7 +895,12 @@
     after = null;
     if (follow) follow();
   }
-
+  
+  document.addEventListener('click', function (e) {
+    var button = e.target.closest && e.target.closest('button');
+    if (button) playClick();
+  });
+  
   $('openTasks').addEventListener('click', function () { renderTasks(); $('tasksOv').hidden = false; });
   $('openShop').addEventListener('click', function () { renderShop(); $('shopOv').hidden = false; });
   $('openInk').addEventListener('click', function () { renderInk(); $('inkOv').hidden = false; });
