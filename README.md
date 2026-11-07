@@ -12,7 +12,7 @@ it a simple game but i have encountered a lot of bugs , i have also drawn the as
 gaol :
 make mathématiques fun! a lot of people hate math but i don't, so i tried to turn it into a mini game
 
-try it out [https://snetchy09.github.io/Chemistry-musical/]
+try it out [https://snetchy09.github.io/Papery-Calculatory/]
 
 in action 
 
